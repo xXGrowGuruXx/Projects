@@ -6,7 +6,7 @@ We were given the task of writing a minimalist program in which we demonstrate o
 
 I expanded on the idea and turned it into a game.
 
-There are 2 different player types, and the opponent automatically chooses the one that wasn't selected.
+There are 2 different player types.
 
 <h2>Enjoy the game!</h2> <h3>Warrior:</h3>
 
