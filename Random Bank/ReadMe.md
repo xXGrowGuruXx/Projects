@@ -1,35 +1,32 @@
-<h1><strong>Erklärung:</strong></h1>
+<h1><strong>Explanation:</strong></h1>
 
-Dieses WindowsForms Projekt ist als Schulprojekt entstanden.
+This WindowsForms project was created as a school project.
 
-Es ging über 3 Tage. Wir bekahmen ein Pflichtenheft mit der Aufgabe uns daran zu halten.
+It lasted for 3 days. We were given a specification document with the task of adhering to it.
 
-Wir sollten uns in die Lage versetzen mit folgenden Vorgaben zu arbeiten:
+We were supposed to work under the following conditions:
 
-- Pflichtenheft
+- Specification document
   
-- Datenbank
+- Database
   
-- Keine möglichkeit zur nachbesprechnung mit dem Kunden
+- No possibility for follow-up discussions with the client
 
-Wir waren in einem 2er Team. Ein paar sachen aus dem Pflichtenheft konnten wir nicht umsetzen da die Datenbank fehlerhaft war.
+We worked in a team of two. Some parts of the specification could not be implemented due to errors in the database.
 
-An diesen Stellen erscheint eine MessageBox mit "...Coming Soon...Maybe..."
+In these cases, a MessageBox appears with the text "...Coming Soon...Maybe..."
 
-<h2><strong>Viel Spaß beim Testen</strong></h2>
+<h2><strong>Enjoy testing!</strong></h2>
 
+<h1>Login Data:</h1>
 
-<h1>Daten für den Login:</h1>
-
-
-<h3>Kunde</h3>
+<h3>Customer</h3>
 
 Email: john.smith@example.com
 
 Password: 1234
 
-
-<h3>Mitarbeiter</h3>
+<h3>Employee</h3>
 
 Email: emily.miller@example.com
 
