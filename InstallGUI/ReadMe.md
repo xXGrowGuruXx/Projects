@@ -15,6 +15,6 @@ I chose C# to create a fully automated setup process that includes the following
 - **User Import**: Import user data (files not included for confidentiality reasons).
 - **Default User**: Set a default user.
 
-<h2>Note</h2>
+<h2><em>Note</em></h2>
 
 The program is fully functional, provided the necessary company-specific data is available. However, for confidentiality reasons, these data are not included in this public version.
