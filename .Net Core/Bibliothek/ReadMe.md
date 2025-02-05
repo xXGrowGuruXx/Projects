@@ -6,7 +6,7 @@ We wanted to see what we could accomplish as a Team of two in three Days. In the
 
 To achieve this, we created a Requirements Specification using a Library and based our work on it.
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>########################################################</strong></h1>
 
 For testing purposes, you can use the following logins (each Customer has different areas to test. Feel free to check out the Database as well, which will be placed in the Folder when the Project starts):
 
