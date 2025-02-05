@@ -6,7 +6,7 @@ We wanted to see what we could accomplish as a Team of two in three Days. In the
 
 To achieve this, we created a Requirements Specification using a Library and based our work on it.
 
-<h1><strong>########################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 For testing purposes, you can use the following logins (each Customer has different areas to test. Feel free to check out the Database as well, which will be placed in the Folder when the Project starts):
 
@@ -16,7 +16,7 @@ Username: AdminManager
 
 Password: admin1  
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 **Employee:**
 
@@ -24,7 +24,7 @@ Username: MitarKlaus
 
 Password: employee1  
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 **Customers:**
 
@@ -32,18 +32,18 @@ Username1: jonnydoe
 
 Password1: Passwort456  
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 Username2: annawebber  
 
 Password2: Anna2025  
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 Username3: moritzmüller  
 
 Password3: Müller112  
 
-<h1><strong>#########################################################################################################</strong></h1>
+<h1><strong>#####################################################</strong></h1>
 
 <h2><strong>Have fun!</strong></h2>
