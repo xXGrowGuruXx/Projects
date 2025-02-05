@@ -16,7 +16,7 @@ Username: AdminManager
 
 Password: admin1  
 
-<h1><strong>#####################################################</strong></h1>
+<h1><strong>                          </strong></h1>
 
 **Employee:**
 
@@ -24,7 +24,7 @@ Username: MitarKlaus
 
 Password: employee1  
 
-<h1><strong>#####################################################</strong></h1>
+<h1><strong>                          </strong></h1>
 
 **Customers:**
 
@@ -32,13 +32,13 @@ Username1: jonnydoe
 
 Password1: Passwort456  
 
-<h3><strong>#####################################################</strong></h3>
+<h3><strong>                           </strong></h3>
 
 Username2: annawebber  
 
 Password2: Anna2025  
 
-<h3><strong>#####################################################</strong></h3>
+<h3><strong>                           </strong></h3>
 
 Username3: moritzmüller  
 
