@@ -32,13 +32,13 @@ Username1: jonnydoe
 
 Password1: Passwort456  
 
-<h1><strong>#####################################################</strong></h1>
+<h3><strong>#####################################################</strong></h3>
 
 Username2: annawebber  
 
 Password2: Anna2025  
 
-<h1><strong>#####################################################</strong></h1>
+<h3><strong>#####################################################</strong></h3>
 
 Username3: moritzmüller  
 
