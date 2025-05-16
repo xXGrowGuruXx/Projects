@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Auth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .message {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+    <script src="{{ url_for('static', filename='adminLogin/login.js') }}"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white border border-gray-200 shadow-xl rounded-2xl p-8 w-full max-w-md">
+        <h2 id="form-title" class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+        <form id="auth-form" class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Benutzername</label>
+                <input type="text" name="username" id="username" required
+                    class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-inner px-3 py-2 focus:ring-blue-500 focus:border-blue-500" />
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Passwort</label>
+                <input type="password" name="password" id="password" required
+                    class="mt-1 block w-full bg-gray-50 border border-gray-300 rounded-md shadow-inner px-3 py-2 focus:ring-blue-500 focus:border-blue-500" />
+            </div>
+
+            <div id="responseMessage" class="message">
+            </div>
+
+            <button id="submit-btn" type="submit"
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 shadow">
+                Einloggen
+            </button>
+        </form>
+
+        <!-- Umschaltbereich -->
+        <div class="mt-6 text-center text-sm text-gray-600">
+            <p id="switch-to-register">
+                Noch kein Account?
+                <a href="#" onclick="toggleMode('register')" class="text-blue-600 hover:underline">Registrieren</a>
+            </p>
+            <p id="switch-to-login" class="hidden">
+                Bereits registriert?
+                <a href="#" onclick="toggleMode('login')" class="text-blue-600 hover:underline">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
