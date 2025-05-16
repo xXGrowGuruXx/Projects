@@ -1,5 +1,3 @@
-# TQ6WebsiteTeam2
-
 # Begonnen 13.05.2025
 
 <h2><strong>Aufgaben:</strong></h2>
