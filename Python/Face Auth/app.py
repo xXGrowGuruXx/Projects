@@ -1,12 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
-import subprocess
+import register
+import login
 
 def open_register():
-    subprocess.Popen(["python", "register.py"])
+    register.register_user()
 
 def open_login():
-    subprocess.Popen(["python", "login.py"])
+    login.login_user()
 
 app = tk.Tk()
 app.title("FaceAuth")

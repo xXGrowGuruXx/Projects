@@ -4,17 +4,36 @@ import dlib
 import pickle
 import time
 import os
+import sys
 
+# Funktion, um den Pfad zur Datei unabhängig von .exe oder .py zu finden
+def resource_path(relative_path):
+    try:
+        # Für PyInstaller
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+# Lade den Shape Predictor
+predictor_path = resource_path("shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor(predictor_path)
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+
+# Lade die Encodings
+def load_encodings():
+    path = resource_path("face_encodings.pkl")
+    if not os.path.exists(path):
+        print("Keine registrierten Nutzer gefunden!")
+        return None
+    with open(path, "rb") as f:
+        return pickle.load(f)
 
 def login_user():
-    if not os.path.exists("face_encodings.pkl"):
-        print("Keine registrierten Nutzer gefunden!")
+    data = load_encodings()
+    if data is None:
         return
-
-    with open("face_encodings.pkl", "rb") as f:
-        data = pickle.load(f)  # dict {username: encoding}
 
     usernames = list(data.keys())
     encodings = list(data.values())
