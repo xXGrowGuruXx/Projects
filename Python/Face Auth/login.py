@@ -9,12 +9,15 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 def login_user():
-    if not os.path.exists("face_encoding.pkl"):
-        print("Kein registriertes Gesicht gefunden!")
+    if not os.path.exists("face_encodings.pkl"):
+        print("Keine registrierten Nutzer gefunden!")
         return
 
-    with open("face_encoding.pkl", "rb") as f:
-        registered_encoding = pickle.load(f)
+    with open("face_encodings.pkl", "rb") as f:
+        data = pickle.load(f)  # dict {username: encoding}
+
+    usernames = list(data.keys())
+    encodings = list(data.values())
 
     cap = cv2.VideoCapture(0)
     start_time = time.time()
@@ -43,24 +46,22 @@ def login_user():
             else:
                 hint = "Gesicht erkannt, vergleiche..."
 
-                # Landmarken holen (falls nötig, hier aber nur für face_recognition Encoding)
-                shape = predictor(rgb_frame, face_rect)
-
-                # Encoding holen - Achtung Reihenfolge top,right,bottom,left bei face_recognition
                 encoding = face_recognition.face_encodings(rgb_frame, known_face_locations=[(y, x+w, y+h, x)], num_jitters=1)
 
                 if encoding:
-                    match = face_recognition.compare_faces([registered_encoding], encoding[0])[0]
-                    if match:
-                        hint = "Login erfolgreich!"
-                        cv2.putText(frame, hint, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+                    matches = face_recognition.compare_faces(encodings, encoding[0])
+                    if True in matches:
+                        match_index = matches.index(True)
+                        username = usernames[match_index]
+                        hint = f"Login erfolgreich! Hallo {username}"
+                        cv2.putText(frame, hint, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
                         cv2.imshow("Login", frame)
                         cv2.waitKey(2000)
                         break
                     else:
                         hint = "Gesicht nicht erkannt!"
 
-        cv2.putText(frame, hint, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+        cv2.putText(frame, hint, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         cv2.imshow("Login", frame)
 
         if time.time() - start_time > 30:
