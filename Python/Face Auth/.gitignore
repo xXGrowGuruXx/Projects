@@ -1,2 +1,4 @@
 app.exe
 compile.txt
+.gitignore
+.gitattributes
