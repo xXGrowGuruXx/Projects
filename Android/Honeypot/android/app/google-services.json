@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "694761859481",
+    "project_id": "imker-tagebuch",
+    "storage_bucket": "imker-tagebuch.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694761859481:android:c9fcffb47db946f72c0b08",
+        "android_client_info": {
+          "package_name": "com.hk_productions.imkertagebuch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694761859481-fpb492nh7pncaft5983ne2a4n5sogtv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hk_productions.imkertagebuch",
+            "certificate_hash": "212291b7d514be5e32feb01cb6e3e61c10b29a3d"
+          }
+        },
+        {
+          "client_id": "694761859481-l3s8v38gn7u9ht1eeve0d717lpm3jhts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmdGr27VJ8g6FHCMqttWOE1Kg-xIKqBSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694761859481-l3s8v38gn7u9ht1eeve0d717lpm3jhts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
